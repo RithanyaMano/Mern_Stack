@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>", initial-scale="1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Form Validation</h1>
+  <div class="sec">
+    <section>
+           <form>
+            <table>
+                <tr>
+                    
+                        <td> <label for="name"> Enter Your Name</label>
+                        </td>
+                        <td> <input  type="text"  id="name" pattern="[a-z]+">
+                        </td>
+                </tr>
+                <tr>
+                    <td> <label for="email">Enter Your Email</label>
+                    </td>
+                    <td> <input type="text"  id="email" pattern=".*[@]*.">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="pass">Enter your Password</label>
+                    </td>
+                    <td> <input type="text" id="pass" pattern="[a-zA-Z]+.*[0-9]*." >
+                    </td>
+                </tr>
+                <tr  >
+                    <td > <input type="submit" submit></td>
+                </tr>
+                        </table> 
+           </form>
+       
+    </section>
+
+  </div>
+       
+    
+  
+</body>
+</html>

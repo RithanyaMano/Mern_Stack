@@ -1,0 +1,46 @@
+<!-- Form Validation,form action,checkbox,radio,Alter message,datalist,fieldset-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form novalidate><label for="course"> Course code</label>
+        <input type="course" id="course" name="course" pattern="[A-Z]{3}[0-9]{2}[A-Z]{3}[0-9]{3}" required> 
+        <label for="fname">Enter your name</label>
+        <input type="text" id="fname" pattern="#[^g-zG-Z]{6}">
+        <label for="phone"> Phone Number</label>
+        <input type="text" id="phone" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{3}">
+        <label for="ur"> URL</label>
+        <input type="text" id="ur" pattern="https://www[.][a-zA-Z]+[.]com">
+        <label for="op"> Select your college</label>
+        <input list="data" id="op"><br>
+<datalist id="data">
+    <option value="Sns"></option>
+    <option value="Karpagam"></option>
+</datalist>
+<input type="radio" id="dep" name="cst">
+<label for="dep">CSE</label>
+<input type="radio" id="dept" name="cst">
+<label for="dept">CST</label><br>
+<input type="checkbox" id="aws" name="interest">
+<label for="interest"> AWS</label>
+<input type="checkbox" id="mern" name="mern">
+<label for="interest"> MERN</label>
+<fieldset>
+    <legend>Enter a message</legend>
+        <textarea rows="4" cols="10">Enter a message</textarea>
+  
+</fieldset>
+        <input type="submit" submit>
+    </form> 
+    <pre>
+        this is pre tag
+        ....hey...
+        hey    hello
+    </pre>
+    <button onclick="alert('welcome')">Click me</button>
+</body>
+</html>

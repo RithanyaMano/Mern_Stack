@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+}
+.sec{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 60vh;
+    width: 80vh;
+    align-items: center;
+}
+table{
+    height: 100%;
+}
+.subm{
+   margin-left: 40%;
+}
