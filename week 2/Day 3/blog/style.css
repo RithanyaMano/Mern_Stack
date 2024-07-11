@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.blog{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.blog p{
+    font-size: 4rem;
+    color: white;
+}
+.over{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.blog-box{
+    border: 2px solid white;
+    display: flex;
+    width: 40vw;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.blog-box p{
+    color: white;
+}
+.im{
+    margin-top: 8vh;
+}
+.im p{
+    color: white;
+}
+.im img{
+    width: 100vw;
+    height: 60vh;
+}
+.im-content{
+    color: white;
+   position: absolute;
+  margin-top: 40vh;
+ margin-left: 5%;
+
+}
+.time{
+    width: 15vw;
+    display: flex;
+
+}
+.time p{
+margin-left: 8px;
+}
+.para{
+    font-size: 3rem;
+}
+.dt{
+    margin-top: 6%;
+    display: flex;
+}
+.box{
+    margin-top: 5vh;
+    margin-left: 5%;
+}
+.box p{
+color: white;
+display: inline;
+border: 2px solid white;
+padding: 10px 15px;
+margin-left: 15px;
+}
+.content{
+    color: white;
+    margin-top: 8vh;
+    margin-left: 5%;
+}
+.lo{
+   
+    width: 60vw;
+}
+.loo{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+h1{
+    margin-top: 5vh;
+}
+
+.trend span{
+color: dimgray;
+}
+.upper{
+    margin-top: 5vh;
+    width: 60vw;
+}
+
+.inside{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  
+}

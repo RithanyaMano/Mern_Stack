@@ -1,0 +1,9 @@
+Html questions.
+.....................
+Difference between inline or block (div and span)
+Explain About any semantic html element
+describe image map control
+explain about any 5 html5 tag 
+what are entities in html
+what is relevency of DOCTYPE
+what is the use of <datalist> in html

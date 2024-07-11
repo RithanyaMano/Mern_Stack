@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+}
+nav div{
+    display: flex;
+    width: 30vw;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.heading{
+    font-size: 3rem;
+     margin-left: 35%;
+  margin-top: 5vh;
+   
+}
+article{
+    display: flex;
+    
+    justify-content: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+   
+}
+.section{
+    background-color: cadetblue;
+    width: 50vw;
+    height: 40vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+table{
+    height: 100%;
+}
+footer{
+    background-color: black;
+    height: 5vh;
+    color: white;
+    margin-top: 10vh;
+}

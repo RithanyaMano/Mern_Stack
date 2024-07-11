@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+        .c{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+    </style> 
+</head>
+<body>
+     task 1 Adding 
+   <input id="num1" type="number">
+   <input id="num2" type="number">
+   <button onclick="changess()" id="add">Add</button>
+   <div style="border: 1px solid black;" id="result">
+    
+   </div> 
+     <script>
+     function changess(){
+
+        var fir=document.getElementById("num1").value;
+        var sec=document.getElementById("num2").value;
+
+        var res=parseInt(fir)+parseInt(sec);
+        document.getElementById("result").innerHTML=res;
+     }
+       
+    </script><br>
+          Task 2 Guess the number 
+    <h1>Guess Number from 1 to 10</h1>
+    <input id="num1" type="number">
+    <button onclick="check()">Check</button>
+    <p id="p1"></p>
+    <p id="p2">Your Score:<span id="score"></span></p>
+    <script>
+        function check(){
+        var user=document.getElementById("num1").value;
+        var comp=Math.floor(Math.random()*10)+1;
+        var user1=parseInt(user);
+        let res = 0;
+        if(comp===user1){
+            document.getElementById("p1").innerHTML="You won";
+            res=res+1;
+            document.getElementById("score").innerHTML=res;
+        }
+        else{
+            document.getElementById("p1").innerHTML="You wrong!";
+            document.getElementById("score").innerHTML=res;
+        }
+    }
+    </script>  <br>
+    Task 3 Adding Class 
+    <div id="d" > </div>
+    <button onclick="changes()">Change</button>
+    <script>
+       
+        function changes(){
+            // document.getElementById("d").style.backgroundColor="red";
+            let newClass = document.getElementById("d")
+            console.log("newClass", newClass)
+            newClass.setAttribute("class","c");
+        }
+    </script>  <br>
+Task 4 Dynamic Texting
+    <input id="inp" onkeyup="con()">
+    <h1 id="h"></h1>
+    <script>
+function con(){
+    var contents=document.getElementById("inp").value;
+    document.getElementById("h").innerHTML=contents;
+}
+    </script> 
+
+    
+ <button onclick="change()" id="btn">Change the color</button>
+     <script>
+        function change(){
+        document.getElementById("btn").style.backgroundColor="red";
+        }
+     </script>
+     Task 5 Dynamic Texting<br>
+     <button onclick="nithu()">Nithish</button>
+     <button onclick="rithu()">Rithanya</button>
+     <p id="name">Nithish</p>
+     <script>
+          function nithu(){
+            document.getElementById("name").textContent="Nithish"
+          }
+          function rithu(){
+            document.getElementById("name").textContent="Rithanya"
+          }
+     </script>
+     Task 4 Delete element <br>
+     <p onclick="o(event)" id="one">one</p>
+     <p onclick="o(event)" id=two>two</p>
+     <p onclick="o(event)" id="three">three</p>
+     <script>
+    function o(){
+     event.target.remove();
+    }
+     </script>
+</body>
+</html>
