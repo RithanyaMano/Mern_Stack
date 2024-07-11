@@ -1,0 +1,153 @@
+how css work:first need to link html and css there are three ways to link css it refers the selectors in that selectors we have some property and value using this css will apply style 
+when we apply more than one value for the same style to the same element browser will follow certain rules and it takes the precediency to determine which style has take presitent this is
+called cascading after this cascading browser will inherit some style to the child element from parent element and then it applies stylys to each element and renders the web page .
+if css not linked then default style will get applied
+.............................................................................................................................................................
+How browser render the css:////////
+.................................
+fetching resources before the browser displays actual content it download  the resources are html,css js after fetching it moves to passing html and create DOM which is tree like structure represent all the element on the page.and then it moves to passing css the browser passess any link or embedded css into css object model which is the representation of all the style that will be applied to DOM.this Dom and css sample called render tree.after this the browser  calculate the layout determined exact position and size of each element on the  screen this process is called box model which include details like dimension padding,margin,border after this browser paint each node in the render tree  in screen 
+...............................................................................
+for inline we can't able give width so by converting it into block
+...............................................................................
+
+https://pastebin.com/2Q8YBwhY
+selector---Class,id,html selector
+selector{
+property: value;
+}
+priority---inline>internal>external
+priority---id>class>html selector
+....................................................................................................................................................
+Multiple styles(if our file is large)
+base.css-basic style
+layout.css-flex, grid CSS
+themes.css
+
+                                             Box model
+                                          ...................
+
+ the box has different component that makeup rectangular the components are :
+content-it is the area where actual content display the content area dimensions are width,height
+padding-the padding is the  space that surrounds the content and separate it from border 
+margin-the  margin is outer most layer of the box it separate the elements from the other elements and provide some space around the element 
+border-it wraps the content and padding its like a frame for the content
+.......................................................................................................................................... 
+we can control the dimension of the content using width and height
+
+Width-by default it will take the parent width;
+Height-
+without using height property we can increase height by using the padding.  
+..............................................................................................................................................
+                                  Command Line
+                               .................
+CSS-/*  */
+html-<!-- -->
+
+                                Selector
+                            ...............
+id-#name(id name should be unique)
+class-.name(but many classes will have same name)
+html-tag or type selector.
+universal selector-*{}
+............................................................................css3 selector:
+                                  Attribute selector
+                                ........................ 
+Attribute selector-selecting by attribute 
+<input type="text">-----input[Attribute type]{}------comes in css3
+input[type="text"]{color: blue;}
+
+Types of Attribute selectors:
+...................................
+     
+where ever we have class name starts with btn
+class="btn"-1
+class="bt n sample"-2
+~----starts with class name
+this both can have same style if we use this selector
+[class~="btn"]{
+}
+*---where ever this name contain
+[class*="btn"]{
+}
+^space vittu enga eruthalum edukum(substring)
+eg:class=sample btn poo;
+[class^="btn"]{
+}
+
+                                  Combinator selector
+                              ............................
+Descendant Selector:
+div p{
+}in div for all paragrah style will get applied
+....................................................
+Child Selector (>):
+div>p{
+}style applied only to its child p
+div > p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>Child Selector</h2>
+
+<p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 in the div (inside a section element).</p>
+  </section>
+  <p>Paragraph 4 in the div.</p>
+</div>
+..................................
+Adjacent Sibling Selector (+)(athuku kela erukurathuku matum dha style apply agum)
+The adjacent sibling selector is used to select an element that is directly after another specific element.
+
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+
+The following example selects the first <p> element that are placed immediately after <div> elements:
+......................................................................................
+
+                             Pseudo Selector
+                           .....................
+ pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+a:hover{
+}
+li:nth-child(2){
+}ethanathu child ku style venum in li.
+
+Box sizing:
+................
+border-box
+content-box///////	
+inherit/////////
+                        padding
+                    ..............
+in padding we can't able to give percentage.
+ 
+                      Units
+                   ...........
+px-a fixed unit ideal for element which has precise size
+%-relative unit based on size of parent element
+em-relative to font size of the element itself or its parents
+rem-relative to font size of root element 
+
+                   Positions(layouts are dependent to element display type)
+                ..................
+css positioning controls where and how elements are placed in the webpage layout 
+Types of positioning:
+Static ---it is the default positioning for html element when an element statically position it follows normal page flow and properties like top,left are do not affect the position
+absolute--it is a css layout technique where an element is removed from a normal flow and  placed at the specific coordinate relative to its container when we need to overlay one element to another element we can use this one 
+sticky
+fixed
+relative--it allows element related to there position it will not get removed from the document flow and this is often used as a positioning context in absolute

@@ -1,0 +1,41 @@
+Ips or DNS 
+client side program-ui
+for creating server side program using js then we use nodejs
+opening vs code in cmd-(code .)
+emmet
+div>p*3
+div>p{welcome}
+                                               html 
+                                       ......................
+-tags-(it used to define the content of the page it define the given content is the paragram if it has <p>tag)
+element-(this are used to create a structure of the web page <h1>hey</h1>this entire thing is the element it get opening and closing tag )
+attribute-(it present inside the opening tag <p style="color:red"> this stryle is the attribute)
+......................................................................................................................
+                                               HTML Tags
+                                            ..............
+<!DOCTYPE html>-its that a  not a html  tag .it just gives the informationto the browser that the given document is html5.
+<p>- it will give some space up and down.
+<div>-to define the content is a section we can use div block level element.it will automatically break the line we can give same style to the grp of element. 
+..................................................................................................................
+                                                 Table
+                                               ..........
+<table>-<th>(table heading)
+colspan-to merge two column of the table
+rowspan-to merge rows in table
+....................................................................................................................
+symentic elements-Gives special meaning to the tag---because it enhance the search engine optimization 
+form-getting input feom user
+.............................
+we need to create form in table
+<table>
+<tr>
+<td><input>name</td>for each text box we need to give id
+</tr>
+</table>
+lable -for=input tag id(now if we hover lable then text boc will get focused)
+
+submit button-click on the submit button it goes to forms's action property and it will send the data to the page which has been mentioned in action property thenit reloads the same page 
+it sends the data by appending forms control name with value in the url
+
+
+
