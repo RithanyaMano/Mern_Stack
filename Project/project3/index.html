@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #fffacd ;
+        }
+        .header{
+        height: 10vh;
+        background-color: #ffa07a;
+        margin-top: 5vh;
+        }
+        table{
+            background-color: #5f9ea0;
+            width: 25%;
+          height: 50vh;
+        }
+       
+        .inner{
+            border-bottom: 1px solid white;
+        }
+        table, th, td {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+th{
+    color: white;
+}
+#result{
+    background-color: #5f9ea0;
+    width: 25%;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p style="color: white;font-size: 4rem;transform: scaleX(1.2);margin-left: 20vw;">Welcome to Adi- Online Shopping</p>
+    </div>
+    <div>
+        <table >
+            <tr><th>Customer Name</th>
+               
+                  <td ><input style="margin-left: 20px;" type="text" id="name"> </td>
+            </tr>
+             <tr><th>Mobile Number</th>
+                 <td><input style="margin-left: 20px;" type="number" id="phone_no"> </td>
+            </tr>
+            <tr><th>Billing Address</th>
+                <td><textarea rows="4"style="margin-left: 20px;">Enter your address</textarea> </td>
+            </tr>
+            <tr><th>Choose Product</th>
+                <td>
+                    <input style="margin-left: 20px;" list="product" name="product" id="product">
+                    <datalist id="product">
+                      <option value="Tv">
+                      <option value="Mobile">
+                      <option value="Tablet">
+                    </datalist>
+            </tr>
+            <tr><th>Enter Quality</th>
+                <td><input style="margin-left: 20px;"  type="number" id="quality"> </td>
+            </tr>
+            <tr><th>Payment Mode</th>
+                <td>
+                <select style="margin-left: 50px;">
+                    <option>Debit card</option>
+                    <option>credit card</option>
+                    <option>Upi</option>
+                </select> </td>
+            </tr>           
+            <tr><th>Bag Total</th>
+                <td><input style="margin-left: 20px;"  type="number" id="total"> </td>
+            </tr>
+            <tr><th>Coupon code</th>
+               
+                <td ><input style="margin-left: 20px;" type="text" id="code"> </td>
+          </tr>
+          <tr><th>Delivery Option</th>
+               
+            <td ><input style="margin-left: 20px;" id="express" type="radio">
+            <label for="express">Express</label>
+            <input id="standart" type="radio">
+            <label for="standart">Standart</label> </td>
+      </tr>
+           <tr>
+            <td colspan="2"><input onclick="check()" style="margin-left: 40px;" type="checkbox">I Agree to the Terms and Condition </td>
+           </tr>
+           <tr>
+            <td><button style="margin-left: 20px;">Clear</button>
+            </td>
+            <td><button onclick="view()" style="margin-left: 20px;">Check Amount Payable</button>
+            </td>
+           </tr>
+        </table>
+        <div id="result">
+        
+        </div>
+    </div>
+    </table>
+    <script>
+        
+        function view(){
+            var user_name=document.getElementById("name").value;
+            document.getElementById("result").innerHTML=user_name;
+            var price=document.getElementById("total").value;
+            document.getElementById("result").innerHTML=price;
+        }
+    </script>
+</body>
+</html>
